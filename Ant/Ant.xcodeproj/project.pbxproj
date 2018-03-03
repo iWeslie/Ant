@@ -1192,7 +1192,7 @@
 				TargetAttributes = {
 					D33998C51F4EC007009DACD0 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4UXX38SJ8T;
+						DevelopmentTeam = QR3FJ6C72F;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -1813,12 +1813,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA4638AF15569E824CB6399 /* Pods-Ant.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Ant;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4UXX38SJ8T;
+				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weslie.Ant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qinglv.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant/Ant-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1830,12 +1830,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AB7A0C894F7CEC6FD3D65C2 /* Pods-Ant.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Ant;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4UXX38SJ8T;
+				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weslie.Ant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qinglv.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant/Ant-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
