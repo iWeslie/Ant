@@ -36,7 +36,7 @@ class HouseNeedRentVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
         // 定义发布按钮
         creatRightBtn()
         //加载头部
-        loadListView()
+        //loadListView()
 
        //注册cell
         tableView?.register(UINib.init(nibName: "LunTanListWithAvatarCell", bundle: nil), forCellReuseIdentifier: houseNeedRentCellID)

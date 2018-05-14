@@ -391,8 +391,6 @@
 		D3CA23511F694C4400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Share.strings; sourceTree = "<group>"; };
 		D3CA23531F694C4400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Share.strings"; sourceTree = "<group>"; };
 		D3CA235C1F694D6A00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LunTanTopViewCell.xib; sourceTree = "<group>"; };
-		D3CA235F1F694D6D00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LunTanTopViewCell.strings; sourceTree = "<group>"; };
-		D3CA23611F694D6E00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LunTanTopViewCell.strings"; sourceTree = "<group>"; };
 		D3CA23631F694DA100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SecondHand.storyboard; sourceTree = "<group>"; };
 		D3CA23661F694DA500403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SecondHand.strings; sourceTree = "<group>"; };
 		D3CA23681F694DA800403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SecondHand.strings"; sourceTree = "<group>"; };
@@ -1348,13 +1346,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ant/Pods-Ant-resources.sh",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/Required/ShareSDK.bundle",
-				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/Optional/ShareSDKUI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDKUI.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1569,8 +1568,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA235C1F694D6A00403C45 /* Base */,
-				D3CA235F1F694D6D00403C45 /* en */,
-				D3CA23611F694D6E00403C45 /* zh-Hans */,
 			);
 			name = LunTanTopViewCell.xib;
 			sourceTree = "<group>";

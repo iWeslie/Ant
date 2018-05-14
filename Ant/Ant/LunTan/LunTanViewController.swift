@@ -15,17 +15,17 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
 
     func createModel() {
         let model1  =  lunTanModel()
-        model1.name = "房屋出租"
+        model1.name = "毕业合租"
         model1.image = "luntan_function_icon_houserent"
-        let model2  = lunTanModel()
-        model2.name = "房屋求租"
-        model2.image = "luntan_function_icon_searchhouse"
+//        let model2  = lunTanModel()
+//        model2.name = "房屋求租"
+//        model2.image = "luntan_function_icon_searchhouse"
         let model3  = lunTanModel()
         model3.name = "求职招聘"
         model3.image = "luntan_function_icon_findjob"
-        let model4  = lunTanModel()
-        model4.name = "汽车买卖"
-        model4.image = "luntan_function_icon_carservice"
+//        let model4  = lunTanModel()
+//        model4.name = "汽车买卖"
+//        model4.image = "luntan_function_icon_carservice"
         let model5  = lunTanModel()
         model5.name = "二手市场"
         model5.image = "luntan_function_icon_secondhandmarket"
@@ -33,8 +33,8 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
         model6.name = "同城交友"
         model6.image = "luntan_function_icon_makefriend"
         
-        self.fistArr = [model1,model2,model3,model4,model5,model6]
-        self.secondeArr = [model3,model4,model5,model6]
+        self.fistArr = [model1,model3,model5,model6]
+        self.secondeArr = [model3,model5,model6]
         
         
     }
@@ -75,7 +75,7 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        var height = 0
@@ -100,10 +100,10 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
              cell?.addSubBtns()
             
         }else {
-           cell?.headerView?.isHidden = false
+//           cell?.headerView?.isHidden = false
            cell?.searchTextField.isHidden = true
-            cell?.tempArr = self.secondeArr
-            cell?.addSubBtns()
+//            cell?.tempArr = self.secondeArr
+//            cell?.addSubBtns()
         }
         cell?.showVCClouse = {(VC) in
             

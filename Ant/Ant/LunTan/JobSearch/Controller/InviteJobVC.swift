@@ -32,7 +32,7 @@ class InviteJobVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         loadCellData(page: page)
         //加载头部
-        loadListView()
+        //loadListView()
         //定义发布按钮
         creatRightBtn()
         //初始化tableview

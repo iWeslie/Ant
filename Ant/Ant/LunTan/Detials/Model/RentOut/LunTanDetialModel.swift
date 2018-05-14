@@ -13,6 +13,10 @@ class LunTanDetialModel: NSObject {
     
     var listCellType : Int?
     
+    var product_cate: String?
+    var source: String?
+    
+    
     
     var id : NSNumber?
     var picture: [String]?
@@ -33,6 +37,7 @@ class LunTanDetialModel: NSObject {
     //MARK: -  求租
     var type:  Int?
 
+    var head_pic: String?
     
     // MARK:- 求职
     var education: String?

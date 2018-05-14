@@ -117,7 +117,7 @@ extension NetWorkTool {
         //1.获取请求的URLString
         let urlString = "http://106.15.199.8/jraz/api/news/rotationList"
         //2.获取请求参数
-        let parameters = ["cate_id" : 2]
+        let parameters = ["cate_id" : 1]
         //3.发送请求参数
         request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
             //获取字典数据
@@ -188,7 +188,7 @@ extension NetWorkTool {
         //1.获取请求的URLString
         let urlString = "http://106.15.199.8/jraz/api/news/newsDet"
         //2.获取请求参数
-        let parameters = ["id" : 169 ]
+        let parameters = ["id" : Int(id)]
         //3.发送请求参数
         request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
             //获取字典数据
@@ -278,6 +278,26 @@ extension NetWorkTool {
           
         }
     }
+    
+    
+    func infoList(cate_1: String, cate_2 : String, cate_3 : String, p: Int, finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
+        //1.获取请求的URLString
+        let urlString = "http://106.15.199.8/jraz/api/forum/forumList"
+        //2.获取请求参数
+        let parameters = ["cate_1" : cate_1, "cate_2" : cate_2, "cate_3": cate_3, "p": p] as [String : AnyObject]
+        //3.发送请求参数
+        request(.POST, urlString: urlString, parameters: parameters as [String : AnyObject]) { (result, error) -> () in
+            //获取字典数据
+            guard let resultDict = result as? [String : AnyObject] else {
+                finished(nil, error)
+                return
+            }
+            //将数组数据回调给外界控制器
+            finished(resultDict, error)
+            
+        }
+    }
+    
     
     // MARK:- 论坛详情信息
     func infoDetial(VCType cate_1: LunTanType, id: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {

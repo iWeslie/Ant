@@ -57,8 +57,8 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+    func numberOfSection(in tableView: UITableView) -> Int {
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -208,7 +208,7 @@ class CityWideDVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 4: cell = tableView.dequeueReusableCell(withIdentifier: "messageHeader")
             
         case 5: cell = tableView.dequeueReusableCell(withIdentifier: "messagesCell")
-            
+//            
         default: break
         }
         

@@ -29,7 +29,8 @@ class NewsDetailVCViewController: UIViewController,UITableViewDelegate, UITableV
     //新闻url 
     var  url : NSURL?
     //接受新闻id值
-    var  newsID =  ""
+    var  newsID = ""
+    
     //newsmodel
     var newsModel : NewsDetailModel?
     //commentModel
@@ -42,7 +43,7 @@ class NewsDetailVCViewController: UIViewController,UITableViewDelegate, UITableV
          loadNewsDetail()
          createTableView()
         //初始化底部发布视图
-        creatBottomView()
+//        creatBottomView()
          //注册cell
         self.tableView.register(UINib.init(nibName: "NewsDetailSharedCell", bundle: nil), forCellReuseIdentifier: newsDetailSharedCell)
         self.tableView.register(UINib.init(nibName: "NewsHotCommondCell", bundle: nil), forCellReuseIdentifier: hotCommandCell)
@@ -386,7 +387,7 @@ extension  NewsDetailVCViewController {
         if section == 0{
             return 3;
         }else if(section == 1 ){
-            let commentNum =  self.commentModelArr.count != 0 ? self.commentModelArr.count : 1
+            let commentNum = 0
             return commentNum;
         }else {
             return self.hot_newsModelArr.count
@@ -400,8 +401,8 @@ extension  NewsDetailVCViewController {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
-        case 1:
-            return 50
+//        case 1:
+//            return 50
         case 2:
             return 50
         default:
@@ -410,8 +411,7 @@ extension  NewsDetailVCViewController {
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         switch section {
-        case 1:
-            return 70
+
         default:
             return 0.001
         }
@@ -419,14 +419,14 @@ extension  NewsDetailVCViewController {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         //初始化热点评论
-        let recommendView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 50))
+        let recommendView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 0))
         recommendView.backgroundColor = UIColor.white
-        let topBackView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 15))
+        let topBackView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 0))
         topBackView.backgroundColor = UIColor.init(red: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1.0)
         recommendView.addSubview(topBackView)
         
-        let  hotCommandImage = UIImageView.init(frame:  CGRect.init(x: 10, y: 25, width: 70, height: 25))
-        hotCommandImage.image = UIImage.init(named: "img_title_hotreviews")
+        let  hotCommandImage = UIImageView.init(frame:  CGRect.init(x: 10, y: 25, width: 70, height: 0))
+//        hotCommandImage.image = UIImage.init(named: "img_title_hotreviews")
         recommendView.addSubview(hotCommandImage)
         
         //初始化热点新闻
@@ -443,8 +443,8 @@ extension  NewsDetailVCViewController {
         hotNewsView.addSubview(hotBtn)
         
         switch section {
-        case 1:
-            return recommendView
+//        case 1:
+//            return recommendView
         case 2:
             return hotNewsView
         default:
@@ -454,10 +454,10 @@ extension  NewsDetailVCViewController {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let recommendBtnView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 70))
+        let recommendBtnView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 0))
         recommendBtnView.backgroundColor = UIColor.white
-        let  commandSearchBtn = UIButton.init(frame: CGRect.init(x: (screenWidth - 160) / 2, y: 25, width: 160, height: 30))
-        commandSearchBtn.setTitle("查看全部评论", for: .normal)
+        let  commandSearchBtn = UIButton.init(frame: CGRect.init(x: (screenWidth - 160) / 2, y: 25, width: 160, height: 0))
+        commandSearchBtn.setTitle(" ", for: .normal)
         commandSearchBtn.addTarget(self, action: #selector(NewsDetailVCViewController.showAllComment), for: .touchUpInside)
         commandSearchBtn.layer.borderWidth = 1
         commandSearchBtn.layer.borderColor = UIColor.red.cgColor
@@ -465,8 +465,8 @@ extension  NewsDetailVCViewController {
         commandSearchBtn.setTitleColor(UIColor.red, for: .normal)
         recommendBtnView.addSubview(commandSearchBtn)
         switch section {
-        case 1:
-            return recommendBtnView
+//        case 1:
+//            return recommendBtnView
         default:
             return nil
         }
@@ -493,14 +493,6 @@ extension  NewsDetailVCViewController {
             default:
                 return 0;
             }
-        }else if(indexPath.section == 1 ){
-            guard self.commentModelArr.count != 0 else {
-                return 800
-            }
-            
-            let height = self.commentModelArr[indexPath.row].height != nil ? self.commentModelArr[indexPath.row].height : 800
-            return height!;
-            
         }else {
             return 100;
             

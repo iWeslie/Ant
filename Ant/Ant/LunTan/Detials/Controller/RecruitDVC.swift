@@ -57,7 +57,7 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -145,7 +145,6 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            
             switch indexPath.row {
             case 0:
                 let basic = tableView.dequeueReusableCell(withIdentifier: "recruitBasicInfo") as! RecruitBasicInfo
@@ -155,8 +154,6 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
                 cell?.separatorInset = UIEdgeInsets.zero
                 }
-                
-                
             case 1:
                 let detial = tableView.dequeueReusableCell(withIdentifier: "recruitDetial") as! RecruitDetial
                 detial.viewModel = modelInfo
@@ -169,10 +166,8 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 let locationinfo = tableView.dequeueReusableCell(withIdentifier: "locationInfo") as! LocationInfo
                 locationinfo.viewModel = modelInfo
                 cell = locationinfo
-                
             default: break
             }
-            
         case 1:
             let detialcontroduction = tableView.dequeueReusableCell(withIdentifier: "detialControduction") as! DetialControduction
             detialcontroduction.viewModel = modelInfo
@@ -187,16 +182,13 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell = detialcontroduction
             
         case 3:
-            
             let connactoptions = tableView.dequeueReusableCell(withIdentifier: "connactOptions") as! ConnactOptions
-            
             if let key = modelInfo?.connactDict[indexPath.row].first?.key {
                 connactoptions.con_Ways.text = key
             }
             if let value = modelInfo?.connactDict[indexPath.row].first?.value {
                 connactoptions.con_Detial.text = value
             }
-            
             
             switch modelInfo?.connactDict[indexPath.row].first?.key {
             case "联系人"?:
@@ -212,22 +204,15 @@ class RecruitDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             default:
                 break
             }
-            
             cell = connactoptions
-
         if (cell?.responds(to: #selector(setter: UITableViewCell.separatorInset)))! {
             cell?.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
             }
         case 4: cell = tableView.dequeueReusableCell(withIdentifier: "messageHeader")
-            
         case 5: cell = tableView.dequeueReusableCell(withIdentifier: "messagesCell")
-            
         default: break
         }
-        
-        
-        
-        return cell!
+       return cell!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -30,6 +30,14 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     
     func loadDetialTableView() {
         
@@ -59,7 +67,7 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -186,6 +194,10 @@ class RentOutDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //                <#statements#>
 //            }
             
+            
+//           guard indexPath.row >= 5 else{
+//            
+//            }
             if let contact = modelInfo?.connactDict[indexPath.row] {
                 if  let key = contact.first?.key{
                 connactoptions.con_Ways.text = key

@@ -34,7 +34,7 @@ class LunTanTopViewCell: UITableViewCell {
          self.headerView?.addSubview(headLeftTitle)
         
         let headRightTitle = UILabel.init(frame: CGRect.init(x: screenWidth - 90, y: 15, width:90, height: 10))
-        headRightTitle.text = "为你提供生活所需"
+        headRightTitle.text = "合租求职交易交友"
         headRightTitle.textColor = UIColor.lightGray
         headRightTitle.font = UIFont.systemFont(ofSize: 10)
         self.headerView?.addSubview(headRightTitle)
@@ -76,23 +76,24 @@ class LunTanTopViewCell: UITableViewCell {
         var  presentVC = UIViewController()
         switch tag {
         case 0:
-            let houseRentVC = HouseRentVC()
+            let houseRentVC =  HouseRentListVC()
+            houseRentVC.title = "房屋出租"
             presentVC = houseRentVC
+//        case 1:
+//            let houseRentVC = HouseNeedRentVC()
+//            houseRentVC.title = "房屋求租"
+//            presentVC = houseRentVC
         case 1:
-            let houseRentVC = HouseNeedRentVC()
-            houseRentVC.title = "房屋求租"
-            presentVC = houseRentVC
-        case 2:
             let jobVC = JobOrEnigeerVC()
             jobVC.title = "求职招聘"
             presentVC = jobVC
-        case 3:
-            let CarSale = CarSaleVC()
-            CarSale.title = "汽车买卖"
-            presentVC = CarSale
-        case 4:
+//        case 3:
+//            let CarSale = CarSaleVC()
+//            CarSale.title = "汽车买卖"
+//            presentVC = CarSale
+        case 2:
             presentVC = UIStoryboard.init(name: "SecondHand", bundle: nil).instantiateInitialViewController()!
-        case 5:
+        case 3:
             let cityWide = CityWideVC()
             cityWide.title = "同城交友"
             presentVC = cityWide

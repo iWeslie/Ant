@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadListView()
+        //loadListView()
         self.navigationController?.navigationBar.isTranslucent = false
     }
     

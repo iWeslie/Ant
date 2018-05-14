@@ -38,7 +38,7 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         //初始化tableview
         initTableView()
         //加载头部
-        loadListView()
+        //loadListView()
         //注册cell
         tableView?.register(UINib.init(nibName: "LunTanListWithAvatarCell", bundle: nil), forCellReuseIdentifier: recruitCellID)
        

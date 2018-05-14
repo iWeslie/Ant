@@ -14,7 +14,7 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var modelInfo: LunTanDetialModel?
     
-    var wantJobID  = 0
+    var wantJobID  = 1
     lazy var urls = [String]()
 
     
@@ -56,7 +56,7 @@ class WantJobDVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -24,12 +24,12 @@ class ChoseCityVC: UIViewController {
     
     var cities: [[String: [Any]]] = [
         
-        ["新南威尔士": ["悉尼", "卧龙岗", "纽卡斯尔", "中央海岸", UIColor.red]],
-        ["维多利亚": ["墨尔本", "基隆", skyblue]],
-        ["昆士兰": ["布里斯班", "黄金海岸", "凯恩斯", "阳关海岸", UIColor.green]],
-        ["南澳": ["阿德莱德", UIColor.yellow]],
-        ["西澳": ["珀斯", UIColor.orange]],
-        ["其他重要城市": ["堪培拉","霍巴特","达尔文", UIColor.purple]]
+        ["": ["圣诞红", UIColor.red]],
+        ["": ["梦想蓝", skyblue]],
+        ["": ["草坪绿", UIColor.green]],
+        ["": ["酸橙黄", UIColor.yellow]],
+        ["": ["橘子橙", UIColor.orange]],
+        ["": ["香水紫", UIColor.purple]]
     ]
     
     override func viewDidLoad() {
@@ -59,7 +59,7 @@ class ChoseCityVC: UIViewController {
         titleLabel.textColor = UIColor.black
         titleLabel.textAlignment = NSTextAlignment.center
         titleLabel.font = UIFont.systemFont(ofSize: 18)
-        titleLabel.text = "选择城市"
+        titleLabel.text = "选择皮肤"
         bgView.addSubview(titleLabel)
         
         //取消按钮

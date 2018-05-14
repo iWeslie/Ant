@@ -38,7 +38,7 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         //定义发布按钮
         creatRightBtn()
         //加载头部
-        loadListView()
+        //loadListView()
         //注册cell
         tableView?.register(UINib.init(nibName: "LunTanListWithLocationCell", bundle: nil), forCellReuseIdentifier: listViewCell)
         

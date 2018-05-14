@@ -58,6 +58,23 @@ class LunTanListWithAvatarCell: UITableViewCell {
             if let lable2 = viewModel?.house_source {
                 self.lable2.text = lable2
             }
+            
+            if let area  = viewModel?.area {
+                self.lable1.text = area
+            }
+            if let edu = viewModel?.education {
+                self.lable2.text = edu
+            }
+            if let exp = viewModel?.experience {
+                self.lable3.text = exp
+            }
+            if let time = viewModel?.time {
+                self.createTime.text = "\(time)"
+            }
+            
+            if let head = viewModel?.head_pic {
+                avatar.sd_setImage(with: URL.init(string: head), placeholderImage: #imageLiteral(resourceName: "avatar_placeholder"), options: .continueInBackground, completed: nil)
+            }
         }
     }
     

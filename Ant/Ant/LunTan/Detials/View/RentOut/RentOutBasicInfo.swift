@@ -40,6 +40,13 @@ class RentOutBasicInfo: UITableViewCell {
                 self.price.setPrice(price)
             }
             
+            if let house_type = viewModel?.product_cate {
+                houseType.setTitleWithSpace(house_type)
+                
+            }
+            if let house_source = viewModel?.source {
+                rentType.setTitleWithSpace(house_source)
+            }
             
         }
     }

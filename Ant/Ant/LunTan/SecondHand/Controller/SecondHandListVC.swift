@@ -8,20 +8,48 @@
 
 import UIKit
 
-class SecondHandListVC: UIViewController {
+class SecondHandListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var issue: UIBarButtonItem!
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+
+    var modelView = [LunTanDetialModel]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     var categoryName: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = categoryName
         
         issue.target = self
         issue.action = #selector(pushIssueVC)
+    
+        
+        NetWorkTool.shareInstance.infoList(cate_1: "market", cate_2: "product_cate", cate_3: categoryName, p: 1) { (result, error) in
+            if error != nil {
+                print(error ?? "load house info list failed")
+                return
+            }
+            guard let resultDict = result!["result"] else {
+                return
+            }
+            
+            guard let resultList  = resultDict["list"]   as? NSArray else {
+                return
+            }
+            
+            for i in 0..<resultList.count {
+                let dict = resultList[i]
+                let basic = LunTanDetialModel(dict: dict as! [String : AnyObject])
+                self.modelView.append(basic)
+            }
+            
+        }
+        
     }
     
     func pushIssueVC() {
@@ -30,5 +58,27 @@ class SecondHandListVC: UIViewController {
         self.navigationController?.pushViewController(giveVC, animated: true)
         
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return modelView.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LunTanListWithLocationCell") as! LunTanListWithLocationCell
+        cell.viewModel = modelView[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+//        let model = self.modelView[indexPath.row]
+//        let vc = RentOutDVC()
+//        
+//        vc.modelInfo = model
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
 }

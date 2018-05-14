@@ -48,8 +48,15 @@ class LunTanListWithLocationCell: UITableViewCell {
                
             }
             
+            if let exp  = viewModel.experience {
+                self.label2.text = exp
+            }
             
             
+            if let area = viewModel.area {
+                self.locationBtn.setTitle(area, for: .normal)
+                
+            }
             if let picture = viewModel.picture?.first{
                 if  let imageURL = URL.init(string: picture) {
                 self.img.sd_setImage(with:  imageURL as URL, placeholderImage: #imageLiteral(resourceName: "moren"))
@@ -72,6 +79,20 @@ class LunTanListWithLocationCell: UITableViewCell {
             
             if let lable1 = viewModel.job_nature {
                 self.label1.text = lable1
+            }
+            
+            if let price = viewModel.price {
+                self.label1.text = "¥\(price)"
+                self.label1.textColor = UIColor.red
+                self.label2.isHidden = true
+            }
+            if let product = viewModel.product_cate {
+                self.edu.text = product
+                self.cons.isHidden = true
+            }
+            if let source = viewModel.source {
+                self.job.text = source
+                self.cons.isHidden = true
             }
         }
     }

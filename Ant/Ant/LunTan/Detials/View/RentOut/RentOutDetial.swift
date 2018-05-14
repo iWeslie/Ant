@@ -37,12 +37,15 @@ class RentOutDetial: UITableViewCell {
             if let checkin = viewModel?.checkinTime {
                 self.checkInTime.text = checkin
             }
-            if let label = viewModel?.labelItems?[0] {
-                lable1.setTitleWithSpace(label)
-            }
-//            if let label = viewModel?.labelItems?[1] {
-//                lable2.setTitleWithSpace(label)
+//            if let label = viewModel?.labelItems?[0] {
+//                lable1.setTitleWithSpace(label)
 //            }
+////            if let label = viewModel?.labelItems?[1] {
+////                lable2.setTitleWithSpace(label)
+////            }
+            
+            lable1.text = "押一付一"
+            lable2.text = "交通便利"
             
         }
       
