@@ -137,7 +137,7 @@ class Register: UIViewController {
         bg2.changeAttrs()
         bg3.changeAttrs()
         
-        NavBar.subviews[0].alpha = 0.5
+//        NavBar.subviews[0].alpha = 0.5
     }
 
     

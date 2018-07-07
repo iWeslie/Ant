@@ -28,7 +28,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     //加载个数数组
     var   pageArr  : NSMutableArray = [0]
     //left按钮title
-    var  cityTitle  = "南京"
+    var  cityTitle  = ""
     //
     var leftNavBtn : UIButton?
 
@@ -173,7 +173,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         leftBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         leftBtn.setTitle( cityTitle, for: .normal)
         leftBtn.setImage(UIImage.init(named: "nav_icon_location"), for: .normal)
-        leftBtn.addTarget(self, action: #selector(getter: UIDynamicBehavior.action), for: .touchUpInside)
+//        leftBtn.addTarget(self, action: #selector(getter: UIDynamicBehavior.action), for: .touchUpInside)
         leftBtn.setTitleColor(UIColor.white, for: .normal)
         self.leftNavBtn = leftBtn
         self.chooseCityBtn = UIBarButtonItem.init(customView: self.leftNavBtn!)
@@ -183,7 +183,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         rightBtn.contentHorizontalAlignment = .right
         rightBtn.setImage(UIImage.init(named: "nav_icon_xiala"), for: .normal)
         rightBtn.addTarget(self, action: #selector(showRightBtn), for: .touchUpInside)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBtn)
     }
     
     

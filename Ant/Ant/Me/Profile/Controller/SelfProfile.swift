@@ -65,6 +65,22 @@ class SelfProfile: UITableViewController {
         return 0.0001
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 && indexPath.row == 2 {
+            let alert = UIAlertController(title: "请选择性别", message: nil, preferredStyle: .actionSheet)
+            let male = UIAlertAction(title: "男", style: .default) { (_) in
+                self.sex.text = "男"
+            }
+            let female = UIAlertAction(title: "女", style: .default) { (_) in
+                self.sex.text = "女"
+            }
+            alert.addAction(male)
+            alert.addAction(female)
+            
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "nickname" {

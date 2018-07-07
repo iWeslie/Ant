@@ -94,7 +94,7 @@ class LoginWithPwd: UIViewController {
         bg1.changeAttrs()
         bg2.changeAttrs()
         
-        Nav.subviews[0].alpha = 0.5
+//        Nav.subviews[0].alpha = 0.5
         
     }
 

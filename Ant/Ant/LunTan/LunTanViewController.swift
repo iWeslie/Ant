@@ -54,6 +54,7 @@ class LunTanViewController: UIViewController,UITableViewDelegate,UITableViewData
         
           tableView.register(UINib.init(nibName: "LunTanTopViewCell", bundle: nil), forCellReuseIdentifier: lunTanCellID)
         
+        tableView.separatorStyle = .none
         
          self.view.addSubview(tableView)
     }

@@ -81,7 +81,7 @@ extension HouseRentListVC: UITableViewDelegate,UITableViewDataSource {
 extension HouseRentListVC {
     
     func creatRightBtn(){
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "发布", style: .plain, target: self, action: #selector(showHouseRent))
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "发布", style: .plain, target: self, action: #selector(showHouseRent))
         
     }
     
@@ -128,7 +128,7 @@ extension HouseRentListVC {
     func initTableView(){
         self.view.backgroundColor = UIColor.white
         self.tabBarController?.tabBar.isHidden = true
-        self.tableView = UITableView.init(frame:CGRect.init(x: 0, y: 40, width: screenWidth, height: screenHeight - 44), style: .plain)
+        self.tableView = UITableView.init(frame:CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight - 44), style: .plain)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.sectionIndexColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 1.0)
