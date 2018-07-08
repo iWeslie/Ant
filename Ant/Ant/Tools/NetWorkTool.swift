@@ -73,7 +73,7 @@ extension NetWorkTool {
     //用户登录
     func UserLogin( _ account:String, password:String , type : String , finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
       //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/login/login"
+        let urlString = "http://140.82.21.39/jraz/api/login/login"
       //2.获取请求参数
         let parameters = ["account" : account , "password": password , "type" : type]
       //3.发送请求参数
@@ -92,7 +92,7 @@ extension NetWorkTool {
     //用户注册
     func UserRegister( _ account:String, password:String , finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/login/register"
+        let urlString = "http://140.82.21.39/jraz/api/login/register"
         //2.获取请求参数
         let parameters = ["account" : account , "password": password]
         //3.发送请求参数
@@ -115,7 +115,7 @@ extension NetWorkTool {
     //轮播图
     func  rotationList( finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/news/rotationList"
+        let urlString = "http://140.82.21.39/jraz/api/news/rotationList"
         //2.获取请求参数
         let parameters = ["cate_id" : 1]
         //3.发送请求参数
@@ -133,7 +133,7 @@ extension NetWorkTool {
     //天气接口
     func weather( _ city : String , finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/news/weather"
+        let urlString = "http://140.82.21.39/jraz/api/news/weather"
         //2.获取请求参数
         let parameters = ["city" : city]
         //3.发送请求参数
@@ -150,7 +150,7 @@ extension NetWorkTool {
     //新闻分类接口
     func newsCate( _ type : String , finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/news/newsCate"
+        let urlString = "http://140.82.21.39/jraz/api/news/newsCate"
         //2.获取请求参数
         let parameters = ["type" : type]
         //3.发送请求参数
@@ -168,7 +168,7 @@ extension NetWorkTool {
     //获取新闻列表
     func  newsList( _ cate_id : String , p : String ,finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/news/newsList"
+        let urlString = "http://140.82.21.39/jraz/api/news/newsList"
         //2.获取请求参数
         let parameters = ["cate_id" : cate_id , "p" : p ]
         //3.发送请求参数
@@ -186,7 +186,7 @@ extension NetWorkTool {
     //新闻详情
     func newsDet( _ id : String ,finished:@escaping (_ result : [String : AnyObject]? ,_ error:Error?) ->()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/news/newsDet"
+        let urlString = "http://140.82.21.39/jraz/api/news/newsDet"
         //2.获取请求参数
         let parameters = ["id" : Int(id)]
         //3.发送请求参数
@@ -216,7 +216,7 @@ extension NetWorkTool {
                      dict : NSDictionary?,
                      finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/user/publish"
+        let urlString = "http://140.82.21.39/jraz/api/user/publish"
         self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
         //2.获取请求参数
         var parameters = ["cate_1": cate_1, "cate_2" : cate_2 , "rootpath" : rootpath , "savepath" : savepath ] as [String : Any]
@@ -263,7 +263,7 @@ extension NetWorkTool {
     // MARK:- 论坛信息列表查询均
     func infoList(VCType cate_1: LunTanType, cate_2 : String, cate_3 : String, cate_4 : String,p: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/forum/forumList"
+        let urlString = "http://140.82.21.39/jraz/api/forum/forumList"
         //2.获取请求参数
         let parameters = ["cate_1" : cate_1.rawValue, "cate_2" : cate_2, "cate_3": cate_3,"cate_4" : cate_4, "p": p] as [String : AnyObject]
         //3.发送请求参数
@@ -282,7 +282,7 @@ extension NetWorkTool {
     
     func infoList(cate_1: String, cate_2 : String, cate_3 : String, p: Int, finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/forum/forumList"
+        let urlString = "http://140.82.21.39/jraz/api/forum/forumList"
         //2.获取请求参数
         let parameters = ["cate_1" : cate_1, "cate_2" : cate_2, "cate_3": cate_3, "p": p] as [String : AnyObject]
         //3.发送请求参数
@@ -302,7 +302,7 @@ extension NetWorkTool {
     // MARK:- 论坛详情信息
     func infoDetial(VCType cate_1: LunTanType, id: Int,  finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/forum/forumInfo"
+        let urlString = "http://140.82.21.39/jraz/api/forum/forumInfo"
         //2.获取请求参数
         let parameters = ["cate_1" : cate_1.rawValue, "id": id] as [String : AnyObject]
         //3.发送请求参数
@@ -323,7 +323,7 @@ extension NetWorkTool {
 extension NetWorkTool {
     func userRelated( token: String, uid: Int, cate:String , p : Int , finished: @escaping (_ result: [String: AnyObject]?, _ error: Error?) -> ()) {
         //1.获取请求的URLString
-        let urlString = "http://106.15.199.8/jraz/api/user/userRelated"
+        let urlString = "http://140.82.21.39/jraz/api/user/userRelated"
         self.requestSerializer.setValue(token, forHTTPHeaderField: "token")
         //2.获取请求参数
         var parameters = ["cate": cate , "p" : p] as [String : AnyObject]

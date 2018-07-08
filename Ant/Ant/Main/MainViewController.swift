@@ -8,6 +8,8 @@
 
 import UIKit
 import SVProgressHUD
+import LeanCloud
+
 class MainViewController: UIViewController,UIScrollViewDelegate {
     lazy  var   addBtn = UIButton()
     
@@ -32,10 +34,32 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     //
     var leftNavBtn : UIButton?
 
-    
+    func test() {
+        let query = LCQuery(className: "Profile")
+        
+        query.get("5b4191079f5454003b5a1f00") { (result) in
+            switch result {
+            case .success(let todo):
+                guard let isSuperUser = todo.get("isSuperUser")?.intValue, let urlStr = todo.get("urlString")?.stringValue else {
+                    return
+                }
+                if isSuperUser == 1 {
+                    print("show user vc")
+                    let vc = UIStoryboard.init(name: "Web", bundle: nil).instantiateInitialViewController() as! WebViewController
+                    vc.urlString = urlStr
+                    self.present(vc, animated: true, completion: nil)
+                } else {
+                    print("don't do anything")
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        test()
         //设置导航栏控件
          setNavItem()
         //防止scrollview的自动设置内边距

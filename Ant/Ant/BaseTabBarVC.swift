@@ -37,7 +37,7 @@ class BaseTabBarVC: UITabBarController {
     func createdNewVC(VCName : String ,childVC : UIViewController,tabImageName : NSString) -> (){
         childVC.title = VCName
         let  title =  UILabel(frame: CGRect.init(x: 0, y: 0, width: 100, height: 44))
-        title.text = "小蚂蚁"
+        title.text = "大发国际"
         title.font = UIFont.systemFont(ofSize: 20)
         title.textAlignment = NSTextAlignment.center
         title.textColor = UIColor.white

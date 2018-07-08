@@ -18,6 +18,7 @@
 		B6480CFB1F58FA3400E4ABB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */; };
 		B6AA56C81F61630E0040E271 /* UserPushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA56C71F61630E0040E271 /* UserPushModel.swift */; };
 		B6AA56CA1F6182910040E271 /* PushProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA56C91F6182910040E271 /* PushProfileCell.swift */; };
+		D3040B9520F1E52100F33C56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3040B9320F1E52100F33C56 /* WebViewController.swift */; };
 		D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */; };
 		D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33998D01F4EC007009DACD0 /* Assets.xcassets */; };
 		D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */; };
@@ -171,14 +172,17 @@
 		D3399A961F4EC771009DACD0 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D61F4EC771009DACD0 /* ThemeColor.swift */; };
 		D3399A971F4EC771009DACD0 /* TopScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999D71F4EC771009DACD0 /* TopScrollView.swift */; };
 		D3399A9B1F4EC9C8009DACD0 /* BaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */; };
+		D34D47A220F1E9B700F9F5F5 /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D47A120F1E9B700F9F5F5 /* Web.storyboard */; };
+		D3837A0520F1048F00E61615 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3837A0420F1048F00E61615 /* SettingsViewController.swift */; };
+		D3837A0720F1049700E61615 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3837A0620F1049700E61615 /* ReportViewController.swift */; };
 		D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */; };
+		D3A4601720F0FB250044A29F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A4601620F0FB250044A29F /* Profile.storyboard */; };
+		D3A4601920F0FB760044A29F /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4601820F0FB760044A29F /* EmptyViewController.swift */; };
 		D3C849441F5EDEA2008AC12E /* AppJump-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */; };
-		D3CA22FD1F680C0000403C45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CA22FF1F680C0000403C45 /* InfoPlist.strings */; };
 		D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */; };
 		D3CA23281F68164800403C45 /* SelfProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA232A1F68164800403C45 /* SelfProfile.storyboard */; };
 		D3CA23381F69445200403C45 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA233A1F69445200403C45 /* LoginTableViewCell.xib */; };
 		D3CA233F1F6944AC00403C45 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23411F6944AC00403C45 /* Register.xib */; };
-		D3CA23481F6947DD00403C45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234A1F6947DD00403C45 /* Localizable.strings */; };
 		D3CA234D1F694C3F00403C45 /* Share.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA234F1F694C3F00403C45 /* Share.xib */; };
 		D3CA235B1F694D6A00403C45 /* LunTanTopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA235D1F694D6A00403C45 /* LunTanTopViewCell.xib */; };
 		D3CA23621F694DA100403C45 /* SecondHand.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23641F694DA100403C45 /* SecondHand.storyboard */; };
@@ -208,9 +212,10 @@
 		B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginWithPwd.xib; path = Ant/Me/Login/LoginWithPwd.xib; sourceTree = SOURCE_ROOT; };
 		B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Ant/Me/Login/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Ant/Me/Login/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
-		B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Ant/Me/Login/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Ant/Me/Profile/Controller/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		B6AA56C71F61630E0040E271 /* UserPushModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPushModel.swift; sourceTree = "<group>"; };
 		B6AA56C91F6182910040E271 /* PushProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushProfileCell.swift; sourceTree = "<group>"; };
+		D3040B9320F1E52100F33C56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D31917FE1F4FD5AB002423C7 /* CityWideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWideVC.swift; sourceTree = "<group>"; };
 		D33998C61F4EC007009DACD0 /* Ant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33998D01F4EC007009DACD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -368,67 +373,33 @@
 		D33999D61F4EC771009DACD0 /* ThemeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 		D33999D71F4EC771009DACD0 /* TopScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScrollView.swift; sourceTree = "<group>"; };
 		D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarVC.swift; sourceTree = "<group>"; };
+		D34D47A120F1E9B700F9F5F5 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		D3837A0420F1048F00E61615 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D3837A0620F1049700E61615 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfDetialViewController.swift; sourceTree = "<group>"; };
+		D3A4601620F0FB250044A29F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D3A4601820F0FB760044A29F /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppJump-Extension.swift"; sourceTree = "<group>"; };
-		D3CA23001F680C0200403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3CA23011F680C0200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D3CA23231F6814F500403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D3CA23251F68150600403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		D3CA23271F68150700403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D3CA23291F68164800403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelfProfile.storyboard; sourceTree = "<group>"; };
-		D3CA232C1F68164A00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SelfProfile.strings; sourceTree = "<group>"; };
-		D3CA232E1F68164B00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SelfProfile.strings"; sourceTree = "<group>"; };
 		D3CA23391F69445200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginTableViewCell.xib; sourceTree = "<group>"; };
-		D3CA233C1F69445500403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginTableViewCell.strings; sourceTree = "<group>"; };
-		D3CA233E1F69445700403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoginTableViewCell.strings"; sourceTree = "<group>"; };
 		D3CA23401F6944AC00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Register.xib; sourceTree = "<group>"; };
-		D3CA23431F6944AF00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Register.strings; sourceTree = "<group>"; };
-		D3CA23451F6944B000403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Register.strings"; sourceTree = "<group>"; };
-		D3CA23491F6947DD00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D3CA234B1F6947E000403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D3CA234C1F6947E200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D3CA234E1F694C3F00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Share.xib; sourceTree = "<group>"; };
-		D3CA23511F694C4400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Share.strings; sourceTree = "<group>"; };
-		D3CA23531F694C4400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Share.strings"; sourceTree = "<group>"; };
 		D3CA235C1F694D6A00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LunTanTopViewCell.xib; sourceTree = "<group>"; };
 		D3CA23631F694DA100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SecondHand.storyboard; sourceTree = "<group>"; };
-		D3CA23661F694DA500403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SecondHand.strings; sourceTree = "<group>"; };
-		D3CA23681F694DA800403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SecondHand.strings"; sourceTree = "<group>"; };
 		D3CA236A1F694E9100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HouseRentVC.xib; sourceTree = "<group>"; };
-		D3CA236D1F694E9300403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HouseRentVC.strings; sourceTree = "<group>"; };
-		D3CA236F1F694E9400403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HouseRentVC.strings"; sourceTree = "<group>"; };
 		D3CA23711F694F0100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HouseRentViewCell.xib; sourceTree = "<group>"; };
-		D3CA23741F694F0400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HouseRentViewCell.strings; sourceTree = "<group>"; };
-		D3CA23761F694F0500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HouseRentViewCell.strings"; sourceTree = "<group>"; };
 		D3CA23781F694F3D00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MessageHeader.xib; sourceTree = "<group>"; };
-		D3CA237B1F694F4000403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MessageHeader.strings; sourceTree = "<group>"; };
-		D3CA237D1F694F4100403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MessageHeader.strings"; sourceTree = "<group>"; };
 		D3CA237F1F694F6600403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Menu.xib; sourceTree = "<group>"; };
-		D3CA23821F694F6800403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
-		D3CA23841F694F6A00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Menu.strings"; sourceTree = "<group>"; };
 		D3CA23861F694FF600403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SecondHandDetial.xib; sourceTree = "<group>"; };
-		D3CA23891F694FF900403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SecondHandDetial.strings; sourceTree = "<group>"; };
-		D3CA238B1F694FFA00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SecondHandDetial.strings"; sourceTree = "<group>"; };
 		D3CA238D1F69505E00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CityWideDetial.xib; sourceTree = "<group>"; };
-		D3CA23901F69505F00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CityWideDetial.strings; sourceTree = "<group>"; };
-		D3CA23921F69506200403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CityWideDetial.strings"; sourceTree = "<group>"; };
 		D3CA23941F69509300403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CarServiceDetial.xib; sourceTree = "<group>"; };
-		D3CA23971F69509400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CarServiceDetial.strings; sourceTree = "<group>"; };
-		D3CA23991F69509500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CarServiceDetial.strings"; sourceTree = "<group>"; };
 		D3CA239B1F6950AD00403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CarBusinessDetial.xib; sourceTree = "<group>"; };
-		D3CA239E1F6950AF00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CarBusinessDetial.strings; sourceTree = "<group>"; };
-		D3CA23A01F6950B000403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CarBusinessDetial.strings"; sourceTree = "<group>"; };
 		D3CA23A21F6950F900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RecruitDetial.xib; sourceTree = "<group>"; };
-		D3CA23A51F6950FB00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RecruitDetial.strings; sourceTree = "<group>"; };
-		D3CA23A71F6950FC00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RecruitDetial.strings"; sourceTree = "<group>"; };
 		D3CA23A91F69515200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BriefIntroduction.xib; sourceTree = "<group>"; };
-		D3CA23AC1F69515400403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BriefIntroduction.strings; sourceTree = "<group>"; };
-		D3CA23AE1F69515500403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BriefIntroduction.strings"; sourceTree = "<group>"; };
 		D3CA23B01F6951A200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentOutDetial.xib; sourceTree = "<group>"; };
 		D3CA23B71F6951D100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentNeedDetial.xib; sourceTree = "<group>"; };
 		D3CA23C91F6961B900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
-		D3CA23CC1F6961BD00403C45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Others.strings; sourceTree = "<group>"; };
-		D3CA23CE1F6961BF00403C45 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Others.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,8 +508,6 @@
 				D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */,
 				D33998D01F4EC007009DACD0 /* Assets.xcassets */,
 				D33998D51F4EC007009DACD0 /* Info.plist */,
-				D3CA22FF1F680C0000403C45 /* InfoPlist.strings */,
-				D3CA234A1F6947DD00403C45 /* Localizable.strings */,
 				D33998E01F4EC5FF009DACD0 /* city.plist */,
 				D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */,
 				D3399A9A1F4EC9C8009DACD0 /* BaseTabBarVC.swift */,
@@ -978,7 +947,6 @@
 			isa = PBXGroup;
 			children = (
 				D33999A81F4EC771009DACD0 /* Controller */,
-				D33999AC1F4EC771009DACD0 /* Model */,
 				D33999AD1F4EC771009DACD0 /* View */,
 			);
 			path = Profile;
@@ -987,23 +955,21 @@
 		D33999A81F4EC771009DACD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */,
 				D33999AB1F4EC771009DACD0 /* SelfProfile.swift */,
 				D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */,
+				D3A4601820F0FB760044A29F /* EmptyViewController.swift */,
+				D3837A0420F1048F00E61615 /* SettingsViewController.swift */,
+				D3837A0620F1049700E61615 /* ReportViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		D33999AC1F4EC771009DACD0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		D33999AD1F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D3CA232A1F68164800403C45 /* SelfProfile.storyboard */,
+				D3A4601620F0FB250044A29F /* Profile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1121,6 +1087,8 @@
 				D33999861F4EC771009DACD0 /* NewsDetailVCViewController.swift */,
 				D339998C1F4EC771009DACD0 /* NewsTableView.swift */,
 				D33999961F4EC771009DACD0 /* SearchViewController.swift */,
+				D3040B9320F1E52100F33C56 /* WebViewController.swift */,
+				D34D47A120F1E9B700F9F5F5 /* Web.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1150,7 +1118,6 @@
 				D3CA23411F6944AC00403C45 /* Register.xib */,
 				B6480CEE1F58F9E000E4ABB3 /* LoginWithPwd.swift */,
 				B6480CEF1F58F9E000E4ABB3 /* LoginWithPwd.xib */,
-				B6480CF91F58FA3400E4ABB3 /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1200,8 +1167,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				"zh-Hans",
 				Base,
 			);
 			mainGroup = D33998BD1F4EC007009DACD0;
@@ -1233,7 +1198,6 @@
 				D33998E11F4EC5FF009DACD0 /* city.plist in Resources */,
 				D33998D11F4EC007009DACD0 /* Assets.xcassets in Resources */,
 				D3CA23691F694E9100403C45 /* HouseRentVC.xib in Resources */,
-				D3CA23481F6947DD00403C45 /* Localizable.strings in Resources */,
 				D3CA23851F694FF600403C45 /* SecondHandDetial.xib in Resources */,
 				D3399A571F4EC771009DACD0 /* NewsHotCommondCell.xib in Resources */,
 				D3399A361F4EC771009DACD0 /* job_recruit_industry.plist in Resources */,
@@ -1243,6 +1207,7 @@
 				B6480CF11F58F9E000E4ABB3 /* LoginWithPwd.xib in Resources */,
 				D3399A341F4EC771009DACD0 /* house_rent_create_time.plist in Resources */,
 				D3399A301F4EC771009DACD0 /* city_wide_age.plist in Resources */,
+				D34D47A220F1E9B700F9F5F5 /* Web.storyboard in Resources */,
 				D3CA235B1F694D6A00403C45 /* LunTanTopViewCell.xib in Resources */,
 				D3CA23621F694DA100403C45 /* SecondHand.storyboard in Resources */,
 				D33999F71F4EC771009DACD0 /* ConnactOptions.xib in Resources */,
@@ -1250,7 +1215,6 @@
 				B6480CF71F58FA1E00E4ABB3 /* LoginViewController.xib in Resources */,
 				D3CA23381F69445200403C45 /* LoginTableViewCell.xib in Resources */,
 				D33999F91F4EC771009DACD0 /* DetialControduction.xib in Resources */,
-				D3CA22FD1F680C0000403C45 /* InfoPlist.strings in Resources */,
 				D3CA23701F694F0100403C45 /* HouseRentViewCell.xib in Resources */,
 				D3399A3F1F4EC771009DACD0 /* LunTanListWithAvatarCell.xib in Resources */,
 				D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */,
@@ -1278,6 +1242,7 @@
 				D3399A031F4EC771009DACD0 /* MessagesCell.xib in Resources */,
 				D3399A351F4EC771009DACD0 /* house_rent_type.plist in Resources */,
 				D3399A3B1F4EC771009DACD0 /* second_hand_create_time.plist in Resources */,
+				D3A4601720F0FB250044A29F /* Profile.storyboard in Resources */,
 				D3399A3C1F4EC771009DACD0 /* second_hand_trade_type.plist in Resources */,
 				D3CA237E1F694F6600403C45 /* Menu.xib in Resources */,
 				D3CA23931F69509300403C45 /* CarServiceDetial.xib in Resources */,
@@ -1317,6 +1282,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ant/Pods-Ant-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -1326,6 +1293,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -1376,6 +1345,7 @@
 				D33998DF1F4EC5CB009DACD0 /* AppDelegate.swift in Sources */,
 				D3399A021F4EC771009DACD0 /* MessagesCell.swift in Sources */,
 				D33999F11F4EC771009DACD0 /* CityWideBasicInfo.swift in Sources */,
+				D3837A0720F1049700E61615 /* ReportViewController.swift in Sources */,
 				D3399A561F4EC771009DACD0 /* NewsHotCommondCell.swift in Sources */,
 				D3399A781F4EC771009DACD0 /* MessageViewCell.swift in Sources */,
 				D3399A601F4EC771009DACD0 /* NewsTypeTableCell.swift in Sources */,
@@ -1400,6 +1370,7 @@
 				D3399A2B1F4EC771009DACD0 /* CategoryVC.swift in Sources */,
 				D33999E51F4EC771009DACD0 /* LunTanDetialModel.swift in Sources */,
 				D33999DD1F4EC771009DACD0 /* CarBusinessDVC.swift in Sources */,
+				D3A4601920F0FB760044A29F /* EmptyViewController.swift in Sources */,
 				D33999DF1F4EC771009DACD0 /* CityWideDVC.swift in Sources */,
 				D33999EB1F4EC771009DACD0 /* CarBusinessDetial.swift in Sources */,
 				B6480CF01F58F9E000E4ABB3 /* LoginWithPwd.swift in Sources */,
@@ -1430,8 +1401,10 @@
 				D3399A551F4EC771009DACD0 /* NewsDetailVCViewController.swift in Sources */,
 				D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */,
 				D3399A221F4EC771009DACD0 /* InviteJobInfoView.swift in Sources */,
+				D3040B9520F1E52100F33C56 /* WebViewController.swift in Sources */,
 				D33999E61F4EC771009DACD0 /* CustomStyle-Extension.swift in Sources */,
 				D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */,
+				D3837A0520F1048F00E61615 /* SettingsViewController.swift in Sources */,
 				D3399A4C1F4EC771009DACD0 /* ChoseCityVC.swift in Sources */,
 				D3399A4B1F4EC771009DACD0 /* CateModel.swift in Sources */,
 				B6480CE81F58F9C100E4ABB3 /* UserInfo.swift in Sources */,
@@ -1471,21 +1444,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D3CA22FF1F680C0000403C45 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3CA23001F680C0200403C45 /* en */,
-				D3CA23011F680C0200403C45 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23231F6814F500403C45 /* Base */,
-				D3CA23251F68150600403C45 /* en */,
-				D3CA23271F68150700403C45 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1494,8 +1456,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23291F68164800403C45 /* Base */,
-				D3CA232C1F68164A00403C45 /* en */,
-				D3CA232E1F68164B00403C45 /* zh-Hans */,
 			);
 			name = SelfProfile.storyboard;
 			sourceTree = "<group>";
@@ -1504,8 +1464,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23391F69445200403C45 /* Base */,
-				D3CA233C1F69445500403C45 /* en */,
-				D3CA233E1F69445700403C45 /* zh-Hans */,
 			);
 			name = LoginTableViewCell.xib;
 			sourceTree = "<group>";
@@ -1514,29 +1472,15 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23401F6944AC00403C45 /* Base */,
-				D3CA23431F6944AF00403C45 /* en */,
-				D3CA23451F6944B000403C45 /* zh-Hans */,
 			);
 			name = Register.xib;
 			path = Ant/Me/Login;
 			sourceTree = SOURCE_ROOT;
 		};
-		D3CA234A1F6947DD00403C45 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3CA23491F6947DD00403C45 /* Base */,
-				D3CA234B1F6947E000403C45 /* en */,
-				D3CA234C1F6947E200403C45 /* zh-Hans */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		D3CA234F1F694C3F00403C45 /* Share.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D3CA234E1F694C3F00403C45 /* Base */,
-				D3CA23511F694C4400403C45 /* en */,
-				D3CA23531F694C4400403C45 /* zh-Hans */,
 			);
 			name = Share.xib;
 			sourceTree = "<group>";
@@ -1553,8 +1497,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23631F694DA100403C45 /* Base */,
-				D3CA23661F694DA500403C45 /* en */,
-				D3CA23681F694DA800403C45 /* zh-Hans */,
 			);
 			name = SecondHand.storyboard;
 			sourceTree = "<group>";
@@ -1563,8 +1505,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA236A1F694E9100403C45 /* Base */,
-				D3CA236D1F694E9300403C45 /* en */,
-				D3CA236F1F694E9400403C45 /* zh-Hans */,
 			);
 			name = HouseRentVC.xib;
 			sourceTree = "<group>";
@@ -1573,8 +1513,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23711F694F0100403C45 /* Base */,
-				D3CA23741F694F0400403C45 /* en */,
-				D3CA23761F694F0500403C45 /* zh-Hans */,
 			);
 			name = HouseRentViewCell.xib;
 			sourceTree = "<group>";
@@ -1583,8 +1521,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23781F694F3D00403C45 /* Base */,
-				D3CA237B1F694F4000403C45 /* en */,
-				D3CA237D1F694F4100403C45 /* zh-Hans */,
 			);
 			name = MessageHeader.xib;
 			sourceTree = "<group>";
@@ -1593,8 +1529,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA237F1F694F6600403C45 /* Base */,
-				D3CA23821F694F6800403C45 /* en */,
-				D3CA23841F694F6A00403C45 /* zh-Hans */,
 			);
 			name = Menu.xib;
 			sourceTree = "<group>";
@@ -1603,8 +1537,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23861F694FF600403C45 /* Base */,
-				D3CA23891F694FF900403C45 /* en */,
-				D3CA238B1F694FFA00403C45 /* zh-Hans */,
 			);
 			name = SecondHandDetial.xib;
 			sourceTree = "<group>";
@@ -1613,8 +1545,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA238D1F69505E00403C45 /* Base */,
-				D3CA23901F69505F00403C45 /* en */,
-				D3CA23921F69506200403C45 /* zh-Hans */,
 			);
 			name = CityWideDetial.xib;
 			sourceTree = "<group>";
@@ -1623,8 +1553,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23941F69509300403C45 /* Base */,
-				D3CA23971F69509400403C45 /* en */,
-				D3CA23991F69509500403C45 /* zh-Hans */,
 			);
 			name = CarServiceDetial.xib;
 			sourceTree = "<group>";
@@ -1633,8 +1561,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA239B1F6950AD00403C45 /* Base */,
-				D3CA239E1F6950AF00403C45 /* en */,
-				D3CA23A01F6950B000403C45 /* zh-Hans */,
 			);
 			name = CarBusinessDetial.xib;
 			sourceTree = "<group>";
@@ -1643,8 +1569,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23A21F6950F900403C45 /* Base */,
-				D3CA23A51F6950FB00403C45 /* en */,
-				D3CA23A71F6950FC00403C45 /* zh-Hans */,
 			);
 			name = RecruitDetial.xib;
 			sourceTree = "<group>";
@@ -1653,8 +1577,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23A91F69515200403C45 /* Base */,
-				D3CA23AC1F69515400403C45 /* en */,
-				D3CA23AE1F69515500403C45 /* zh-Hans */,
 			);
 			name = BriefIntroduction.xib;
 			sourceTree = "<group>";
@@ -1679,8 +1601,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3CA23C91F6961B900403C45 /* Base */,
-				D3CA23CC1F6961BD00403C45 /* en */,
-				D3CA23CE1F6961BF00403C45 /* zh-Hans */,
 			);
 			name = Others.storyboard;
 			sourceTree = "<group>";
@@ -1787,7 +1707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA4638AF15569E824CB6399 /* Pods-Ant.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Ant;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
@@ -1804,8 +1724,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AB7A0C894F7CEC6FD3D65C2 /* Pods-Ant.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Ant;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Qinglv Network Technology Co., Ltd (QR3FJ6C72F)";
 				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

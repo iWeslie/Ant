@@ -46,7 +46,7 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     func creatRightBtn() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "发布", style: .plain, target: self, action: #selector(JobSearchVC.showJobInfoVC))
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "发布", style: .plain, target: self, action: #selector(JobSearchVC.showJobInfoVC))
         
     }
     
@@ -61,7 +61,7 @@ class JobSearchVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func initTableView() {
         self.view.backgroundColor = UIColor.white
-        self.tableView = UITableView.init(frame:CGRect.init(x: 0, y: 30, width: screenWidth, height: screenHeight - 44), style: .plain)
+        self.tableView = UITableView.init(frame:CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight - 44), style: .plain)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         self.tableView?.showsVerticalScrollIndicator = false

@@ -14,7 +14,6 @@ class LunTanListWithLocationCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var priceBtn: UIButton!
     @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var creatTimeLbl: UILabel!
     @IBOutlet weak var infoView: UIView!
@@ -30,18 +29,19 @@ class LunTanListWithLocationCell: UITableViewCell {
             guard let viewModel = viewModel else {
                 return
             }
+            
             if  viewModel.listCellType == 1 {
                 infoView.isHidden = true
-                self.cons.isHidden = true
+//                self.cons.isHidden = true
                 self.job.isHidden = true
                 self.edu.isHidden = true
-                self.priceBtn.isHidden = false
+//                self.priceBtn.isHidden = false
             }else{
                 infoView.isHidden = false
-                self.cons.isHidden = false
+//                self.cons.isHidden = false
                 self.job.isHidden = false
                 self.edu.isHidden = false
-                self.priceBtn.isHidden = true
+//                self.priceBtn.isHidden = true
             }
             if let title = viewModel.title {
                 self.title.text = title
@@ -88,12 +88,30 @@ class LunTanListWithLocationCell: UITableViewCell {
             }
             if let product = viewModel.product_cate {
                 self.edu.text = product
-                self.cons.isHidden = true
+//                self.cons.isHidden = true
             }
             if let source = viewModel.source {
                 self.job.text = source
-                self.cons.isHidden = true
+//                self.cons.isHidden = true
             }
+            if let edu = viewModel.education {
+                self.edu.text = " " + edu + " "
+                self.edu.isHidden = false
+            } else {
+                self.edu.isHidden = true
+            }
+            if let job = viewModel.job {
+                self.job.text = " " + job + " "
+                self.job.isHidden = false
+            } else {
+                self.job.isHidden = true
+            }
+//            if let cons = viewModel.contact_name {
+//                self.cons.text = " " + cons + " "
+//                self.cons.isHidden = false
+//            } else {
+//                self.cons.isHidden = true
+//            }
         }
     }
 

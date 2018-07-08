@@ -28,6 +28,8 @@ class DetialControduction: UITableViewCell {
                 DetialHCons.constant = detialLbl.getLabHeight(labelStr: detialLbl.text!, font: detialLbl.font, width: UIScreen.main.bounds.width - 40)
                 detialHeight = DetialHCons.constant
         
+            } else {
+                self.detialLbl.text = "暂无"
             }
         }
     }

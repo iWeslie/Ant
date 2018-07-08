@@ -9,14 +9,17 @@
 import UIKit
 import AFNetworking
 import SVProgressHUD
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var theme : UIColor = UIColor.red
+    var theme = #colorLiteral(red: 0.9882352948, green: 0.2392156869, blue: 0.2235294133, alpha: 1)
     var fontSize : CGFloat = 1.0
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        LeanCloud.initialize(applicationID: "l6XtC0bqkryWcJDmuCQO4UPc-gzGzoHsz", applicationKey: "8s7oJ1PrqgbVlmy0FFNWmnrN")
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
@@ -54,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let deafult = UserDefaults.standard
         let font = deafult.float(forKey: "font")
         appdelgate?.fontSize  =  font != 0 ?  CGFloat(font) :  CGFloat(1.0)
-        swizzlingMethod(clzz: UIViewController.self, oldSelector: #selector(UIViewController.viewWillAppear(_:)), newSelector: Selector(("viewDidLoadForChangeTitleColor")))
+        swizzlingMethod(clzz: UIViewController.self, oldSelector: #selector(UIViewController.viewWillAppear(_:)), newSelector: #selector(UIViewController.viewDidLoadForChangeTitleColor))
    
         
         
