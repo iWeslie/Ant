@@ -489,7 +489,7 @@ extension  NewsDetailVCViewController {
             case 1:
                 return webViewHeight;
             case 2:
-                return 300;
+                return 120;
             default:
                 return 0;
             }
@@ -516,10 +516,10 @@ extension  NewsDetailVCViewController {
 
             case 2:
                  let sharecell = tableView.dequeueReusableCell(withIdentifier: newsDetailSharedCell, for: indexPath) as? NewsDetailSharedCell
-                 let statement  =  self.newsModel?.statement != nil ?  self.newsModel?.statement : ""
-                     sharecell?.statement.text = "                    \(String(describing: (statement)!))"
-                 let interest = self.newsModel?.interest != nil ? self.newsModel?.interest : 0
-                     sharecell?.interestBtn.setTitle("\(interest!)人喜欢", for: .normal)
+//                 let statement  =  self.newsModel?.statement != nil ?  self.newsModel?.statement : ""
+//                     sharecell?.statement.text = "                    \(String(describing: (statement)!))"
+//                 let interest = self.newsModel?.interest != nil ? self.newsModel?.interest : 0
+//                     sharecell?.interestBtn.setTitle("\(interest!)人喜欢", for: .normal)
                     cell = sharecell
                 // }
                
