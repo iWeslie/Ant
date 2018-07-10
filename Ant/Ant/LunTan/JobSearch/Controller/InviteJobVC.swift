@@ -54,10 +54,10 @@ class InviteJobVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func showJobInfoVC() -> () {
         
-        let  giveVC = GiveOutVC()
-        giveVC.title = "招聘信息"
-        giveVC.listTableView = InviteJobInfoView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
-        self.navigationController?.pushViewController(giveVC, animated: true)
+//        let  giveVC = GiveOutVC()
+//        giveVC.title = "招聘信息"
+//        giveVC.listTableView = InviteJobInfoView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//        self.navigationController?.pushViewController(giveVC, animated: true)
         
     }
     

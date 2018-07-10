@@ -36,10 +36,14 @@ class NewsTableView: UITableView ,UITableViewDelegate, UITableViewDataSource{
     lazy   var  weatherView  = UIView()
     
     var imageScrollView : TopScrollView?
-  
     
-    init(frame: CGRect, style: UITableViewStyle , cateID : Int) {
+    override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
+    }
+    
+    
+    convenience init(frame: CGRect, style: UITableViewStyle, cateID: Int) {
+        self.init(frame: frame, style: style)
         tableView = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,7 +55,7 @@ class NewsTableView: UITableView ,UITableViewDelegate, UITableViewDataSource{
         tableView.register(UINib.init(nibName: "NewsTypeTableCell", bundle: nil), forCellReuseIdentifier: cellID)
         //注册多图片nib
         tableView.register(UINib.init(nibName:"NewsThreeImageCell", bundle: nil), forCellReuseIdentifier: threeCellId)
-          SVProgressHUD.show()
+        SVProgressHUD.show()
         NetWorkTool.shareInstance.newsList("\(cateID)", p: "\(p)") { (newsInfo, error) in
             
             weak var weakSelf  = self
@@ -68,22 +72,25 @@ class NewsTableView: UITableView ,UITableViewDelegate, UITableViewDataSource{
                         weakSelf?.modelArray.append(newListModel!)
                     }
                 }
-             weakSelf?.tableView.separatorStyle = .singleLine
+                weakSelf?.tableView.separatorStyle = .singleLine
                 weakSelf?.reloadData()
             }
         }
-        //设置回调
-        //默认下拉刷新
         tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(NewsTableView.refresh))
-        // 马上进入刷新状态
         self.tableView.mj_header.beginRefreshing()
-        //上拉刷新
         tableView.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: #selector(NewsTableView.loadMore))
-        // 设置自动切换透明度(在导航栏下面自动隐藏)
         self.tableView.mj_header.isAutomaticallyChangeAlpha = true
-        //创建分页控制器
         creatPageVC(cateID: cateID)
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+//    init(frame: CGRect, style: UITableViewStyle , cateID : Int) {
+//        super.init(frame: frame, style: style)
+//        
+//    }
     
     func  loadMore() {
         self.p += 1
@@ -122,10 +129,7 @@ class NewsTableView: UITableView ,UITableViewDelegate, UITableViewDataSource{
             self.reloadData()
         })
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+
 
     //创建分页控制器
     func creatPageVC(cateID : Int) -> () {

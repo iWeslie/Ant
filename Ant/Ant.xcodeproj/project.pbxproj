@@ -83,12 +83,9 @@
 		D3399A1F1F4EC771009DACD0 /* JobOrEnigeerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999441F4EC771009DACD0 /* JobOrEnigeerVC.swift */; };
 		D3399A201F4EC771009DACD0 /* JobSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999451F4EC771009DACD0 /* JobSearchVC.swift */; };
 		D3399A211F4EC771009DACD0 /* JobSearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999471F4EC771009DACD0 /* JobSearchStatus.swift */; };
-		D3399A221F4EC771009DACD0 /* InviteJobInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999491F4EC771009DACD0 /* InviteJobInfoView.swift */; };
-		D3399A231F4EC771009DACD0 /* JobSearchInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994A1F4EC771009DACD0 /* JobSearchInfoView.swift */; };
 		D3399A241F4EC771009DACD0 /* lunTanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994B1F4EC771009DACD0 /* lunTanModel.swift */; };
 		D3399A251F4EC771009DACD0 /* LunTanTopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994C1F4EC771009DACD0 /* LunTanTopViewCell.swift */; };
 		D3399A271F4EC771009DACD0 /* LunTanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339994E1F4EC771009DACD0 /* LunTanViewController.swift */; };
-		D3399A281F4EC771009DACD0 /* NomenclatureSpecification.md in Sources */ = {isa = PBXBuildFile; fileRef = D339994F1F4EC771009DACD0 /* NomenclatureSpecification.md */; };
 		D3399A291F4EC771009DACD0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999521F4EC771009DACD0 /* Category.swift */; };
 		D3399A2A1F4EC771009DACD0 /* CategoryDetialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999531F4EC771009DACD0 /* CategoryDetialVC.swift */; };
 		D3399A2B1F4EC771009DACD0 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999541F4EC771009DACD0 /* CategoryVC.swift */; };
@@ -118,7 +115,6 @@
 		D3399A431F4EC771009DACD0 /* SecondHandIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999701F4EC771009DACD0 /* SecondHandIssueVC.swift */; };
 		D3399A441F4EC771009DACD0 /* SecondHandListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999711F4EC771009DACD0 /* SecondHandListVC.swift */; };
 		D3399A461F4EC771009DACD0 /* GiveOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999751F4EC771009DACD0 /* GiveOutVC.swift */; };
-		D3399A471F4EC771009DACD0 /* HouseRentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999761F4EC771009DACD0 /* HouseRentTabView.swift */; };
 		D3399A481F4EC771009DACD0 /* PicPicKerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999781F4EC771009DACD0 /* PicPicKerCollectionView.swift */; };
 		D3399A491F4EC771009DACD0 /* PicPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33999791F4EC771009DACD0 /* PicPickerViewCell.swift */; };
 		D3399A4A1F4EC771009DACD0 /* PicPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D339997A1F4EC771009DACD0 /* PicPickerViewCell.xib */; };
@@ -199,6 +195,7 @@
 		D3CA23AF1F6951A200403C45 /* RentOutDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B11F6951A200403C45 /* RentOutDetial.xib */; };
 		D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */; };
 		D3CA23C81F6961B900403C45 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23CA1F6961B900403C45 /* Others.storyboard */; };
+		D3E9A7F020F384210000176A /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9A7EF20F384210000176A /* TestTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,12 +280,9 @@
 		D33999441F4EC771009DACD0 /* JobOrEnigeerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobOrEnigeerVC.swift; sourceTree = "<group>"; };
 		D33999451F4EC771009DACD0 /* JobSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchVC.swift; sourceTree = "<group>"; };
 		D33999471F4EC771009DACD0 /* JobSearchStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchStatus.swift; sourceTree = "<group>"; };
-		D33999491F4EC771009DACD0 /* InviteJobInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteJobInfoView.swift; sourceTree = "<group>"; };
-		D339994A1F4EC771009DACD0 /* JobSearchInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSearchInfoView.swift; sourceTree = "<group>"; };
 		D339994B1F4EC771009DACD0 /* lunTanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lunTanModel.swift; sourceTree = "<group>"; };
 		D339994C1F4EC771009DACD0 /* LunTanTopViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunTanTopViewCell.swift; sourceTree = "<group>"; };
 		D339994E1F4EC771009DACD0 /* LunTanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunTanViewController.swift; sourceTree = "<group>"; };
-		D339994F1F4EC771009DACD0 /* NomenclatureSpecification.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NomenclatureSpecification.md; sourceTree = "<group>"; };
 		D33999521F4EC771009DACD0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D33999531F4EC771009DACD0 /* CategoryDetialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetialVC.swift; sourceTree = "<group>"; };
 		D33999541F4EC771009DACD0 /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
@@ -318,7 +312,6 @@
 		D33999701F4EC771009DACD0 /* SecondHandIssueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandIssueVC.swift; sourceTree = "<group>"; };
 		D33999711F4EC771009DACD0 /* SecondHandListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHandListVC.swift; sourceTree = "<group>"; };
 		D33999751F4EC771009DACD0 /* GiveOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveOutVC.swift; sourceTree = "<group>"; };
-		D33999761F4EC771009DACD0 /* HouseRentTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseRentTabView.swift; sourceTree = "<group>"; };
 		D33999781F4EC771009DACD0 /* PicPicKerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPicKerCollectionView.swift; sourceTree = "<group>"; };
 		D33999791F4EC771009DACD0 /* PicPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerViewCell.swift; sourceTree = "<group>"; };
 		D339997A1F4EC771009DACD0 /* PicPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPickerViewCell.xib; sourceTree = "<group>"; };
@@ -400,6 +393,7 @@
 		D3CA23B01F6951A200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentOutDetial.xib; sourceTree = "<group>"; };
 		D3CA23B71F6951D100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentNeedDetial.xib; sourceTree = "<group>"; };
 		D3CA23C91F6961B900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
+		D3E9A7EF20F384210000176A /* TestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +500,7 @@
 				D33999B31F4EC771009DACD0 /* Others */,
 				D33999BB1F4EC771009DACD0 /* Tools */,
 				D33998DE1F4EC5CB009DACD0 /* AppDelegate.swift */,
+				D3E9A7EF20F384210000176A /* TestTableView.swift */,
 				D33998D01F4EC007009DACD0 /* Assets.xcassets */,
 				D33998D51F4EC007009DACD0 /* Info.plist */,
 				D33998E01F4EC5FF009DACD0 /* city.plist */,
@@ -521,7 +516,6 @@
 		D33998E61F4EC770009DACD0 /* LunTan */ = {
 			isa = PBXGroup;
 			children = (
-				D339994F1F4EC771009DACD0 /* NomenclatureSpecification.md */,
 				D33998EC1F4EC770009DACD0 /* Detials */,
 				D33999371F4EC771009DACD0 /* HouseRent */,
 				D33999341F4EC771009DACD0 /* HouseNeedRent */,
@@ -801,8 +795,6 @@
 		D33999481F4EC771009DACD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D33999491F4EC771009DACD0 /* InviteJobInfoView.swift */,
-				D339994A1F4EC771009DACD0 /* JobSearchInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -895,7 +887,6 @@
 			isa = PBXGroup;
 			children = (
 				D33999751F4EC771009DACD0 /* GiveOutVC.swift */,
-				D33999761F4EC771009DACD0 /* HouseRentTabView.swift */,
 				D33999771F4EC771009DACD0 /* Photo */,
 			);
 			path = SendOutVC;
@@ -1350,7 +1341,6 @@
 				D3399A781F4EC771009DACD0 /* MessageViewCell.swift in Sources */,
 				D3399A601F4EC771009DACD0 /* NewsTypeTableCell.swift in Sources */,
 				D3399A481F4EC771009DACD0 /* PicPicKerCollectionView.swift in Sources */,
-				D3399A231F4EC771009DACD0 /* JobSearchInfoView.swift in Sources */,
 				B6AA56C81F61630E0040E271 /* UserPushModel.swift in Sources */,
 				D3399A171F4EC771009DACD0 /* HouseNeedRentVC.swift in Sources */,
 				D3399A581F4EC771009DACD0 /* NewsHotModel.swift in Sources */,
@@ -1400,7 +1390,6 @@
 				D3399A631F4EC771009DACD0 /* NoCommandCell.swift in Sources */,
 				D3399A551F4EC771009DACD0 /* NewsDetailVCViewController.swift in Sources */,
 				D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */,
-				D3399A221F4EC771009DACD0 /* InviteJobInfoView.swift in Sources */,
 				D3040B9520F1E52100F33C56 /* WebViewController.swift in Sources */,
 				D33999E61F4EC771009DACD0 /* CustomStyle-Extension.swift in Sources */,
 				D31917FF1F4FD5AB002423C7 /* CityWideVC.swift in Sources */,
@@ -1409,11 +1398,10 @@
 				D3399A4B1F4EC771009DACD0 /* CateModel.swift in Sources */,
 				B6480CE81F58F9C100E4ABB3 /* UserInfo.swift in Sources */,
 				D3399A401F4EC771009DACD0 /* LunTanListWithLocationCell.swift in Sources */,
-				D3399A281F4EC771009DACD0 /* NomenclatureSpecification.md in Sources */,
 				D33999DA1F4EC771009DACD0 /* CarSaleVC.swift in Sources */,
-				D3399A471F4EC771009DACD0 /* HouseRentTabView.swift in Sources */,
 				D33999F61F4EC771009DACD0 /* ConnactOptions.swift in Sources */,
 				D3399A2A1F4EC771009DACD0 /* CategoryDetialVC.swift in Sources */,
+				D3E9A7F020F384210000176A /* TestTableView.swift in Sources */,
 				D3399A801F4EC771009DACD0 /* AntTextfield.swift in Sources */,
 				D3399A521F4EC771009DACD0 /* NewsDetailModel.swift in Sources */,
 				D3399A901F4EC771009DACD0 /* LoopView.swift in Sources */,
@@ -1709,11 +1697,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Qinglv.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant/Ant-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1726,12 +1717,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Nanjing Qinglv Network Technology Co., Ltd (QR3FJ6C72F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3FJ6C72F;
 				INFOPLIST_FILE = Ant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Qinglv.Ant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant/Ant-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

@@ -12,7 +12,7 @@ class SecondHandIssueVC: GiveOutVC {
 
     override func viewDidLoad() {
         
-        self.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//        self.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
         
         super.viewDidLoad()
         

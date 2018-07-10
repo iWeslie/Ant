@@ -53,9 +53,9 @@ class SecondHandListVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func pushIssueVC() {
-        let giveVC = GiveOutVC()
-        giveVC.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
-        self.navigationController?.pushViewController(giveVC, animated: true)
+//        let giveVC = GiveOutVC()
+//        giveVC.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//        self.navigationController?.pushViewController(giveVC, animated: true)
         
     }
     

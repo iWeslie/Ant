@@ -54,11 +54,11 @@ class CityWideVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
     func showJobInfoVC() -> () {
-        let  giveVC = GiveOutVC()
-        giveVC.title = "汽车买卖"
-        giveVC.listTableView = JobSearchInfoView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
-        self.navigationController?.pushViewController(giveVC, animated: true)
-        
+//        let  giveVC = GiveOutVC()
+//        giveVC.title = "汽车买卖"
+//        giveVC.listTableView = JobSearchInfoView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//        self.navigationController?.pushViewController(giveVC, animated: true)
+//        
     }
     
     func initTableView() -> () {

@@ -129,37 +129,37 @@ extension HouseNeedRentVC{
     }
     
     func showHouseRent(){
-        let  giveVC = GiveOutVC()
-        giveVC.title = "房屋求租"
-        let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
-        giveVC.listTableView = listTableview
-        
-        listTableview.pushModifyVCClouse = {[weak self](text , index) in
-            //获取当前故事版
-            let storyBoard = UIStoryboard(name: "SelfProfile", bundle: nil)
-            let  dest  = storyBoard.instantiateViewController(withIdentifier: "modify") as? SelfDetialViewController
-            dest?.info = text!
-            self?.navigationController?.pushViewController(dest!, animated: true)
-            giveVC.cateDict = listTableview.houseRentDic
-            dest?.changeClosure = {(changeText) in
-                listTableview.changeTableData(indexPath: index, text: changeText!)
-                giveVC.cateDict = listTableview.houseRentDic
-                listTableview.reloadData()
-            }
-        }
-        listTableview.pushChooseVCClouse = {[weak self](strArr , index) in
-            let choseVC = ChoseTableView()
-            //初始化闭包
-            choseVC.choseBtnClouse = {(name) in
-                listTableview.changeTableData(indexPath: index, text: name!)
-                giveVC.cateDict = listTableview.houseRentDic
-                listTableview.reloadData()
-            }
-            choseVC.resourceArr = strArr as! NSMutableArray
-            self?.navigationController?.pushViewController(choseVC, animated: true)
-        }
-        self.navigationController?.pushViewController(giveVC, animated: true)
-        
+//        let  giveVC = GiveOutVC()
+//        giveVC.title = "房屋求租"
+//        let listTableview = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//        giveVC.listTableView = listTableview
+//        
+//        listTableview.pushModifyVCClouse = {[weak self](text , index) in
+//            //获取当前故事版
+//            let storyBoard = UIStoryboard(name: "SelfProfile", bundle: nil)
+//            let  dest  = storyBoard.instantiateViewController(withIdentifier: "modify") as? SelfDetialViewController
+//            dest?.info = text!
+//            self?.navigationController?.pushViewController(dest!, animated: true)
+//            giveVC.cateDict = listTableview.houseRentDic
+//            dest?.changeClosure = {(changeText) in
+//                listTableview.changeTableData(indexPath: index, text: changeText!)
+//                giveVC.cateDict = listTableview.houseRentDic
+//                listTableview.reloadData()
+//            }
+//        }
+//        listTableview.pushChooseVCClouse = {[weak self](strArr , index) in
+//            let choseVC = ChoseTableView()
+//            //初始化闭包
+//            choseVC.choseBtnClouse = {(name) in
+//                listTableview.changeTableData(indexPath: index, text: name!)
+//                giveVC.cateDict = listTableview.houseRentDic
+//                listTableview.reloadData()
+//            }
+//            choseVC.resourceArr = strArr as! NSMutableArray
+//            self?.navigationController?.pushViewController(choseVC, animated: true)
+//        }
+//        self.navigationController?.pushViewController(giveVC, animated: true)
+//        
     }
 
 }

@@ -231,9 +231,9 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
             self?.navigationController?.pushViewController(searchVC, animated: true)
         }))
         rightAlterVC.addAction(UIAlertAction.init(title: "发布消息", style: .default, handler: {[weak self] (acrion) in
-            let  giveVC = GiveOutVC()
-            giveVC.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
-            self?.navigationController?.pushViewController(giveVC, animated: true)
+//            let  giveVC = GiveOutVC()
+//            giveVC.listTableView = HouseRentTabView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: screenHeight), style: .grouped)
+//            self?.navigationController?.pushViewController(giveVC, animated: true)
         }))
         rightAlterVC.addAction(UIAlertAction.init(title: "取消", style: .destructive, handler: nil))
     
