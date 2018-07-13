@@ -37,9 +37,21 @@ class NewsDetailVCViewController: UIViewController,UITableViewDelegate, UITableV
     var commentModelArr = [NewsComment]()
     //hot_newsModel
     lazy var hot_newsModelArr = [NewsHotModel]()
+    
+    func presentReport() {
+        let vc = UIStoryboard.init(name: "Report", bundle: nil).instantiateInitialViewController()!
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let reportButton = UIBarButtonItem(title: "举报", style: .done, target: self, action: #selector(presentReport))
+//        self.navigationController?.navigationItem.setRightBarButton(reportButton, animated: true)
+//        self.navigationController?.navigationItem.rightBarButtonItem = reportButton
+        self.navigationItem.rightBarButtonItem = reportButton
+        
+        
          loadNewsDetail()
          createTableView()
         //初始化底部发布视图

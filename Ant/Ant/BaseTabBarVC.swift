@@ -21,8 +21,8 @@ class BaseTabBarVC: UITabBarController {
         let mainVC = MainViewController()
         createdNewVC(VCName: "首页", childVC: mainVC, tabImageName: "tabbar_icon_home")
  
-        let lunTanVC = LunTanViewController()
-        createdNewVC(VCName: "论坛", childVC: lunTanVC, tabImageName: "tabbar_icon_luntan")
+//        let lunTanVC = LunTanViewController()
+//        createdNewVC(VCName: "论坛", childVC: lunTanVC, tabImageName: "tabbar_icon_luntan")
         
 //        let messageVC = MessageViewController()
 //        createdNewVC(VCName: "消息", childVC: messageVC, tabImageName: "tabbar_icon_message")

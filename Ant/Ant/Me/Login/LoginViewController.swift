@@ -49,6 +49,10 @@ class LoginViewController: UIViewController {
     @objc fileprivate func updateTime() {
         remainingSeconds -= 1
     }
+    @IBAction func protocolClicked(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "ProtocolVC", bundle: nil).instantiateInitialViewController()!
+        self.present(vc, animated: true, completion: nil)
+    }
     
     @IBAction func login(_ sender: UIButton) {
         

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -119,6 +119,15 @@
                         <action selector="login:" destination="-1" eventType="touchUpInside" id="LYG-iY-FZX"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-mw-OXp">
+                    <rect key="frame" x="32" y="477" width="62" height="30"/>
+                    <state key="normal" title="免责声明">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="protocolClicked:" destination="-1" eventType="touchUpInside" id="FDM-La-L6f"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -140,9 +149,11 @@
                 <constraint firstItem="77V-Ll-cpX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vbw-GW-TPO"/>
                 <constraint firstAttribute="trailing" secondItem="XY5-8n-daS" secondAttribute="trailing" constant="80" id="WmE-fJ-6yN"/>
                 <constraint firstAttribute="trailing" secondItem="QaP-ab-xMv" secondAttribute="trailing" constant="25" id="aH8-7U-aAy"/>
+                <constraint firstItem="jCO-mw-OXp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="agI-1R-aZv"/>
                 <constraint firstAttribute="bottom" secondItem="XY5-8n-daS" secondAttribute="bottom" constant="15" id="c9K-vm-8mK"/>
                 <constraint firstItem="tK9-vz-k9C" firstAttribute="centerY" secondItem="pwl-TI-Wbk" secondAttribute="centerY" id="d7F-Sl-v0i"/>
                 <constraint firstItem="pwl-TI-Wbk" firstAttribute="trailing" secondItem="Au7-bO-Wec" secondAttribute="trailing" id="fHt-9I-SnC"/>
+                <constraint firstItem="jCO-mw-OXp" firstAttribute="top" secondItem="BbF-ph-fMN" secondAttribute="bottom" constant="75" id="g3W-UB-i7E"/>
                 <constraint firstItem="QaP-ab-xMv" firstAttribute="leading" secondItem="tK9-vz-k9C" secondAttribute="trailing" constant="10" id="mng-cW-A1T"/>
                 <constraint firstItem="77V-Ll-cpX" firstAttribute="top" secondItem="BbF-ph-fMN" secondAttribute="bottom" constant="28" id="oNi-zl-c2M"/>
                 <constraint firstItem="852-7D-SuD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p6D-Z1-uDn"/>

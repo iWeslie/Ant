@@ -174,6 +174,9 @@
 		D39AA8EA1F53EDE600FBB060 /* SelfDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */; };
 		D3A4601720F0FB250044A29F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A4601620F0FB250044A29F /* Profile.storyboard */; };
 		D3A4601920F0FB760044A29F /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4601820F0FB760044A29F /* EmptyViewController.swift */; };
+		D3BD191B20F83AB1006DD7B0 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BD191920F83AB1006DD7B0 /* ProtocolViewController.swift */; };
+		D3BD191E20F841DA006DD7B0 /* ProtocolVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BD191D20F841D9006DD7B0 /* ProtocolVC.storyboard */; };
+		D3BD192020F842A7006DD7B0 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BD191F20F842A7006DD7B0 /* Report.storyboard */; };
 		D3C849441F5EDEA2008AC12E /* AppJump-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */; };
 		D3CA230D1F680F0F00403C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA230B1F680F0F00403C45 /* LaunchScreen.storyboard */; };
 		D3CA23281F68164800403C45 /* SelfProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA232A1F68164800403C45 /* SelfProfile.storyboard */; };
@@ -195,6 +198,7 @@
 		D3CA23AF1F6951A200403C45 /* RentOutDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B11F6951A200403C45 /* RentOutDetial.xib */; };
 		D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23B81F6951D100403C45 /* RentNeedDetial.xib */; };
 		D3CA23C81F6961B900403C45 /* Others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3CA23CA1F6961B900403C45 /* Others.storyboard */; };
+		D3DD18DC20F84340000B3584 /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD18DB20F84340000B3584 /* ReportVC.swift */; };
 		D3E9A7F020F384210000176A /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9A7EF20F384210000176A /* TestTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -372,6 +376,9 @@
 		D39AA8E91F53EDE600FBB060 /* SelfDetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfDetialViewController.swift; sourceTree = "<group>"; };
 		D3A4601620F0FB250044A29F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D3A4601820F0FB760044A29F /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		D3BD191920F83AB1006DD7B0 /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = SOURCE_ROOT; };
+		D3BD191D20F841D9006DD7B0 /* ProtocolVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProtocolVC.storyboard; sourceTree = SOURCE_ROOT; };
+		D3BD191F20F842A7006DD7B0 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		D3C849431F5EDEA2008AC12E /* AppJump-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppJump-Extension.swift"; sourceTree = "<group>"; };
 		D3CA23231F6814F500403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3CA23291F68164800403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelfProfile.storyboard; sourceTree = "<group>"; };
@@ -393,6 +400,7 @@
 		D3CA23B01F6951A200403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentOutDetial.xib; sourceTree = "<group>"; };
 		D3CA23B71F6951D100403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RentNeedDetial.xib; sourceTree = "<group>"; };
 		D3CA23C91F6961B900403C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Others.storyboard; sourceTree = "<group>"; };
+		D3DD18DB20F84340000B3584 /* ReportVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
 		D3E9A7EF20F384210000176A /* TestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -908,6 +916,8 @@
 				D3399A9E1F4ED10C009DACD0 /* Model */,
 				D3399A9F1F4ED117009DACD0 /* View */,
 				D3399AA01F4ED122009DACD0 /* Controller */,
+				D3BD191F20F842A7006DD7B0 /* Report.storyboard */,
+				D3DD18DB20F84340000B3584 /* ReportVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1089,6 +1099,8 @@
 			children = (
 				B6480CF41F58FA1E00E4ABB3 /* LoginViewController.swift */,
 				B6480CF51F58FA1E00E4ABB3 /* LoginViewController.xib */,
+				D3BD191920F83AB1006DD7B0 /* ProtocolViewController.swift */,
+				D3BD191D20F841D9006DD7B0 /* ProtocolVC.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1179,6 +1191,7 @@
 				D3399A0B1F4EC771009DACD0 /* RentOutBasicInfo.xib in Resources */,
 				D3399A391F4EC771009DACD0 /* job_recruit_visa.plist in Resources */,
 				D3399A5F1F4EC771009DACD0 /* NewsTopTitleCell.xib in Resources */,
+				D3BD192020F842A7006DD7B0 /* Report.storyboard in Resources */,
 				D3399A051F4EC771009DACD0 /* RecruitBasicInfo.xib in Resources */,
 				D3399A611F4EC771009DACD0 /* NewsTypeTableCell.xib in Resources */,
 				D3399A0F1F4EC771009DACD0 /* SecondHandBasicInfo.xib in Resources */,
@@ -1237,6 +1250,7 @@
 				D3399A3C1F4EC771009DACD0 /* second_hand_trade_type.plist in Resources */,
 				D3CA237E1F694F6600403C45 /* Menu.xib in Resources */,
 				D3CA23931F69509300403C45 /* CarServiceDetial.xib in Resources */,
+				D3BD191E20F841DA006DD7B0 /* ProtocolVC.storyboard in Resources */,
 				D3CA23B61F6951D100403C45 /* RentNeedDetial.xib in Resources */,
 				D3399A541F4EC771009DACD0 /* NewsDetailSharedCell.xib in Resources */,
 				D3399A2C1F4EC771009DACD0 /* car_business_brand.plist in Resources */,
@@ -1410,9 +1424,11 @@
 				D3399A271F4EC771009DACD0 /* LunTanViewController.swift in Sources */,
 				D33999FE1F4EC771009DACD0 /* Menu.swift in Sources */,
 				D33999F31F4EC771009DACD0 /* CityWideDetial.swift in Sources */,
+				D3BD191B20F83AB1006DD7B0 /* ProtocolViewController.swift in Sources */,
 				B6480CFB1F58FA3400E4ABB3 /* ProfileViewController.swift in Sources */,
 				D3399A151F4EC771009DACD0 /* BriefIntroduction.swift in Sources */,
 				D3399A3E1F4EC771009DACD0 /* LunTanListWithAvatarCell.swift in Sources */,
+				D3DD18DC20F84340000B3584 /* ReportVC.swift in Sources */,
 				D33999EF1F4EC771009DACD0 /* CarServiceDetial.swift in Sources */,
 				D3399A511F4EC771009DACD0 /* NewsComment.swift in Sources */,
 				D33998E31F4EC60B009DACD0 /* Static.swift in Sources */,
